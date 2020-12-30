@@ -5,6 +5,7 @@ call plug#begin('~/.local/sharh/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'terryma/vim-multiple-cursors'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -12,6 +13,8 @@ set number
 set relativenumber
 set incsearch
 set tabstop=3
+
+colorscheme nord
 
 syntax on
 
