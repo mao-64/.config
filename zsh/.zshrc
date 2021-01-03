@@ -43,7 +43,7 @@ alias la='lsd -a'
 alias ll='lsd -al'
 alias v='nvim'
 alias ek='cd /usr/src/linux && sudo make menuconfig'
-alias mk='cd /usr/src/linux && sudo make && make modules_install && make install'
+alias mk='sudo /home/mao/testing/makekernel.sh'
 
 # Load ; should be last.
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
