@@ -4,10 +4,10 @@
 st
 
 #XF86MonBrightnessUp
-sudo bl.sh -u 10
+sudo bl -i
 
 #XF86MonBrightnessDown
-sudo bl.sh -d 10
+sudo bl -d
 
 #XF86AudioMicMute
 pactl set-source-mute 1 toggle
