@@ -50,8 +50,8 @@ alias ek='cd /usr/src/linux && sudo make menuconfig'
 alias mk='sudo /home/mao/testing/makekernel.sh'
 
 # Load ; should be last.
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 #source /usr/share/autojump/autojump.zsh 2>/dev/null
 
 echo -ne '\e[5 q'

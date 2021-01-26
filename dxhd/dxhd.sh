@@ -23,6 +23,3 @@ nautilus
 
 #super + alt + r
 st -e ranger
-
-#super + s
-./testing/ifdk.sh
