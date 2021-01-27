@@ -50,7 +50,7 @@ local theme_path = string.format("%s/.config/awesome/theme/theme.lua", os.getenv
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "st"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -171,7 +171,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[2])
+    awful.tag({ "", "", "", "", "", "", "", "", "" }, s, awful.layout.layouts[2])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -237,7 +237,7 @@ globalkeys = gears.table.join(
               {description = "view previous", group = "tag"}),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
+    awful.key({ modkey,           }, "Tab", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
 
     awful.key({ modkey,           }, "j",
@@ -266,7 +266,7 @@ globalkeys = gears.table.join(
               {description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
-    awful.key({ modkey,           }, "Tab",
+    awful.key({ modkey,           }, "Escape",
         function ()
             awful.client.focus.history.previous()
             if client.focus then
@@ -276,8 +276,8 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
-              {description = "open a terminal", group = "launcher"}),
+    --awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+    --          {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "e", awesome.quit,
@@ -492,7 +492,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
@@ -564,3 +564,6 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+beautiful.useless_gap = 5
+

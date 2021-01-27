@@ -125,6 +125,20 @@ theme.awesome_icon = theme_assets.awesome_icon(
     theme.menu_height, theme.bg_focus, theme.fg_focus
 )
 
+-- Battery
+--local bat = lain.widget.bat({
+--    settings = function()
+--        local perc = bat_now.perc ~= "N/A" and bat_now.perc .. "%" or bat_now.perc
+--
+--        if bat_now.ac_status == 1 then
+--            perc = perc .. " plug"
+--        end
+
+--        widget:set_markup(markup.fontfg(theme.font, theme.fg_normal, perc .. " "))
+--    end
+--})
+
+
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 theme.icon_theme = nil
