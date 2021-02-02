@@ -25,6 +25,9 @@ PS1="%B%{$fg_bold[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg
 #autoload -U promptinit; promptinit
 #prompt pure
 
+#autoload -U promptinit; promptinit
+#prompt spaceship
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000

@@ -16,7 +16,7 @@ pactl set-source-mute 1 toggle
 dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#2E3440" -sb "#fffcfb" -sf "#282a36" -nf "#f8f8f2" -fn Ubuntu
 
 #super + b
-brave
+librewolf
 
 #super + alt + e
 nautilus
