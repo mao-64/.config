@@ -23,3 +23,6 @@ nautilus
 
 #super + alt + r
 st -e ranger
+
+#super + alt + s
+st -e pulsemixer

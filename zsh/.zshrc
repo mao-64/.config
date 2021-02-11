@@ -1,34 +1,6 @@
-# Dependancies You Need for this Config
-# zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
-# autojump - jump to directories with j or jc for child or jo to open in file manager
-# zsh-autosuggestions - Suggestions based on your history
-
-# Initial Setup
-# mkdir -p "$HOME/.zsh"
-# git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-# Setup Alias in $HOME/.zsh/aliasrc
-
-# Enable colors and change prompt:
 autoload -U colors && colors
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-#PS1="%B%{$fg[magenta]%}[%{$fg[cyan]%}%n%{$fg[magenta]%}@%{$fg[cyan]%}%M %{$fg[white]%}%~%{$fg[magenta]%}]%{$reset_color%}$%b "
-#PS1="%B%{$fg[white]%}[%n@%M %~]$%b "
-SEGMENT_SEPARATOR="\ue0b0"
 PS1="%B%{$fg_bold[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[cyan]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[cyan]%}%B "
-#POSTEDIT=$'\e[0m'
-#print -n "%{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%}"
 
-#RPROMPT="%*1"
-
-# Pure Prompt
-#fpath+=$HOME/.zsh/pure
-#autoload -U promptinit; promptinit
-#prompt pure
-
-#autoload -U promptinit; promptinit
-#prompt spaceship
-
-# History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/zsh/history
@@ -55,7 +27,6 @@ alias mk='sudo /home/mao/testing/makekernel.sh'
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-#source /usr/share/autojump/autojump.zsh 2>/dev/null
 
 echo -ne '\e[5 q'
 

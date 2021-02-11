@@ -7,6 +7,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -14,6 +15,10 @@ set number
 set relativenumber
 set incsearch
 set tabstop=3
+set colorcolumn=100
+
+set cursorline
+set cursorcolumn
 
 colorscheme nord
 
@@ -51,3 +56,4 @@ map <C-l> <C-w>l
 
 map <leader>n :CocCommand explorer<CR>
 
+let g:netrw_banner =0

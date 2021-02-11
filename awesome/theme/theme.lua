@@ -100,7 +100,7 @@ theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/m
 
 --theme_dir = os.getenv('HOME') .. '/.config/awesome/theme'
 --theme.wallpaper = theme_dir .. 'wallpaper/background.png'
-theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/river_forest_sunset_144468_3840x2160.jpg"
+theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/gunexternal-contewufhwfhoewhfnt.duckduckgo.com.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
