@@ -13,7 +13,10 @@ sudo bl -d
 pactl set-source-mute 1 toggle
 
 #super + d
-dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#2E3440" -sb "#fffcfb" -sf "#282a36" -nf "#f8f8f2" -fn Ubuntu
+dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#282a36" -sb "#44475a" -sf "#bd93f9" -nf "#6272a4" -fn Ubuntu
+
+#super + a
+./Script/dmenu/test1.sh
 
 #super + b
 librewolf
@@ -26,3 +29,6 @@ st -e ranger
 
 #super + alt + s
 st -e pulsemixer
+
+#super + shift + s
+./Script/bookmarks.sh

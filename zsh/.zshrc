@@ -1,5 +1,6 @@
 autoload -U colors && colors
-PS1="%B%{$fg_bold[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[cyan]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[cyan]%}%B "
+PS1="%B%{$fg[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[cyan]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[cyan]%}%b "
+#PROMPT="%{$fg[#8be9fd]%}%{$BG[#f8f8f2]%}%B%n"
 
 HISTSIZE=10000
 SAVEHIST=10000

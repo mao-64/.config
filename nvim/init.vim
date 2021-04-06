@@ -20,7 +20,7 @@ set colorcolumn=100
 set cursorline
 set cursorcolumn
 
-colorscheme nord
+colorscheme dracula
 
 syntax on
 
