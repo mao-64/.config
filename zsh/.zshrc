@@ -199,3 +199,6 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
+
+# Created by `pipx` on 2021-04-10 21:20:11
+export PATH="$PATH:/home/mao/.local/bin"

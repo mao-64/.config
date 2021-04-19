@@ -2,12 +2,14 @@ let mapleader =" "
 
 call plug#begin('~/.local/sharh/nvim/plugged')
 
+Plug 'neovim/nvim-lspconfig'
+
 Plug 'vim-airline/vim-airline'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'preservim/nerdtree'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
@@ -20,11 +22,12 @@ set colorcolumn=100
 set cursorline
 set cursorcolumn
 
-colorscheme dracula
+colorscheme onedark
+set termguicolors
 
 syntax on
 
-let g:python3_host_prog = '/usr/bin/python3.8'
+" let g:python3_host_prog = '/usr/bin/python3'
 
 let g:airline_powerline_fonts = 1
 

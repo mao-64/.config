@@ -14,8 +14,8 @@ local theme = {}
 
 theme.font          = "Source Code Pro Bold 12"
 
-theme.bg_normal     = "#bdbdbd"
-theme.bg_focus      = "#c1c1c1"
+theme.bg_normal     = "#282a36"
+theme.bg_focus      = "#44475a"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
@@ -26,8 +26,8 @@ theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(5)
-theme.border_normal = "#bdbdbd"
+theme.border_width  = dpi(2)
+theme.border_normal = "#000000"
 theme.border_focus  = "#bdbdbd"
 theme.border_marked = "#91231c"
 
@@ -62,7 +62,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
-theme.menu_submenu_icon = "/home/mao/.config/awesome/theme/icons/win98_icon.png"
+theme.menu_submenu_icon = "/home/mao/.config/awesome/theme/icons/29d075a30040ce9616916dbcf7d200ff.svg"
 theme.menu_height = dpi(30)
 theme.menu_width  = dpi(110)
 
@@ -103,7 +103,7 @@ theme.titlebar_maximized_button_focus_active  = "/home/mao/.config/awesome/theme
 
 --theme_dir = os.getenv('HOME') .. '/.config/awesome/theme'
 --theme.wallpaper = theme_dir .. 'wallpaper/background.png'
-theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/fwhfoewhfoiehewfhohowheofh.png"
+theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/river_forest_sunset_144468_3840x2160.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

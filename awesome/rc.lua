@@ -103,7 +103,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                   }
                         })
 
-mylauncher = awful.widget.launcher({ image = "/home/mao/.config/awesome/theme/icons/win98_icon.png",
+mylauncher = awful.widget.launcher({ image = "/home/mao/.config/awesome/theme/icons/29d075a30040ce9616916dbcf7d200ff.svg",
                                      menu = mymainmenu })
 
 -- Menubar configuration
@@ -204,7 +204,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "bottom", screen = s, height = 35 })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height = 35 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -498,7 +498,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
@@ -571,7 +571,7 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}} 
-beautiful.useless_gap = 10
+beautiful.useless_gap = 6
 beautiful.titlebar_bgimage_focus = "/home/mao/.config/awesome/theme/wallpaper/win98_test1.png"
 beautiful.titlebar_bgimage = "/home/mao/.config/awesome/theme/wallpaper/win98_test2.png"
 
