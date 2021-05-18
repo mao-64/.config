@@ -18,12 +18,7 @@ bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
 #[ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
-alias c='clear'
-alias la='lsd -a'
-alias ll='lsd -al'
-alias v='nvim'
-alias ek='cd /usr/src/linux && sudo make menuconfig'
-alias mk='sudo /home/mao/testing/makekernel.sh'
+source .config/zsh/aliasrc
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
@@ -202,3 +197,5 @@ ex=:\
 
 # Created by `pipx` on 2021-04-10 21:20:11
 export PATH="$PATH:/home/mao/.local/bin"
+
+alias luamake=/home/mao/lua-language-server/3rd/luamake/luamake

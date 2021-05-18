@@ -1,0 +1,5 @@
+alias c='clear'
+alias la='lsd -a'
+alias ll='lsd -la'
+alias v='nvim'
+alias vz='nvim .config/zsh/.zshrc'
