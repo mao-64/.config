@@ -10,6 +10,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'preservim/nerdtree'
 Plug 'joshdick/onedark.vim'
+Plug 'vimwiki/vimwiki'
 
 Plug 'neovim/nvim-lspconfig'
 "Plug 'nvim-lua/completion-nvim'
@@ -34,7 +35,7 @@ set colorcolumn=100
 set cursorline
 set cursorcolumn
 
-colorscheme onedark
+colorscheme nord
 set termguicolors
 
 syntax on
