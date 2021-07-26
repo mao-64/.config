@@ -12,23 +12,24 @@ local theme_dir = string.format("%s/.config/awesome/theme", os.getenv("HOME"))
 
 local theme = {}
 
-theme.font          = "Source Code Pro Bold 12"
+theme.font          = "Source Code Pro Bold Nerd 12"
+--theme.font          = "RoBoto Mono Bold Nerd 12"
 
-theme.bg_normal     = "#282c34"
-theme.bg_focus      = "#4b5263"
+theme.bg_normal     = "#282828"
+theme.bg_focus      = "#fabd2f"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#5c6370"
-theme.fg_focus      = "#abb2bf"
+theme.fg_normal     = "#ebdbb2"
+theme.fg_focus      = "#ebdbb2"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(2)
-theme.border_normal = "#282c34"
-theme.border_focus  = "#5c6370"
+theme.border_normal = "#282828"
+theme.border_focus  = "#fabd2f"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -63,8 +64,8 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = "/home/mao/.config/awesome/theme/icons/29d075a30040ce9616916dbcf7d200ff.svg"
-theme.menu_height = dpi(30)
-theme.menu_width  = dpi(110)
+theme.menu_height = dpi(10)
+theme.menu_width  = dpi(70)
 
 -- You can add as many variables as
 -- you wish and access them by using
@@ -103,7 +104,7 @@ theme.titlebar_maximized_button_focus_active  = "/home/mao/.config/awesome/theme
 
 --theme_dir = os.getenv('HOME') .. '/.config/awesome/theme'
 --theme.wallpaper = theme_dir .. 'wallpaper/background.png'
-theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/river_forest_sunset_144468_3840x2160.jpg"
+theme.wallpaper = "/home/mao/.config/awesome/theme/wallpaper/background.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

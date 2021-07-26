@@ -1,11 +1,12 @@
 autoload -U colors && colors
-PS1="%B%{$fg[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[blue]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[blue]%}%b "
+#PS1="%B%{$fg[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[blue]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[blue]%}%b "
 #PS1="%B%{$fg[white]%}%{$fg[black]%}%{$bg[white]%}%n%{$reset_color%}%{$bg[cyan]%}%{$fg[white]%}%{$fg_bold[black]%}%M %~%{$reset_color%}%{$fg[cyan]%}%b "
 #PROMPT="%{$fg[#8be9fd]%}%{$BG[#f8f8f2]%}%B%n"
+PROMPT="%{$fg[blue]%}[%n@%M%~]$ "
 
 HISTSIZE=10000
 SAVEHIST=10000
-HISTFILE=~/zsh/history
+HISTFILE=~/.cache/zHistory
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -58,4 +59,14 @@ export EDITOR="nvim"
 # Created by `pipx` on 2021-04-10 21:20:11
 export PATH="$PATH:/home/mao/.local/bin"
 
-alias luamake=/home/mao/lua-language-server/3rd/luamake/luamake
+# Edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+#alias luamake=/home/mao/lua-language-server/3rd/luamake/luamake
+#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"

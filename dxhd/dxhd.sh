@@ -27,8 +27,14 @@ nautilus
 #super + alt + r
 st -e ranger
 
+#super + a
+st -e ranger ~/Videos/anime
+
 #super + alt + s
 st -e pulsemixer
+
+#super + shift + d
+discord
 
 #super + shift + s
 ./Script/bookmarks.sh

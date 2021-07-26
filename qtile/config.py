@@ -92,6 +92,7 @@ layouts = [
             change_size=30,
             border_focus="#81a1c1",
             border_normal="#2e3440",
+            new_client_position="top",
             ),
     layout.Tile(margin=5, ratio=0.5, ratio_increment=0.05),
     layout.Columns(border_focus_stack='#d75f5f', num_columns=2),

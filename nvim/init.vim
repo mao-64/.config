@@ -7,76 +7,50 @@ source ~/.config/nvim/lsp-config.vim
 luafile ~/.config/nvim/pyls-lsp.lua
 luafile ~/.config/nvim/ccls-lsp.lua
 luafile ~/.config/nvim/rust-lsp.lua
+luafile ~/.config/nvim/bash-lsp.lua
 
 
 set completeopt=menuone,noselect
 
+set nowrap
 set number
 set relativenumber
 set incsearch
 set tabstop=3
-set colorcolumn=100
+set colorcolumn=80,100
 
 set cursorline
 set cursorcolumn
 
-colorscheme nord
+let g:solarized_termcolors=256
+colorscheme gruvbox
 set termguicolors
 
-syntax on
 
-" let g:python3_host_prog = '/usr/bin/python3'
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+let g:LanguageClient_serverCommands = {
+    \ 'sh': ['bash-language-server', 'start']
+    \ }
+
+set timeoutlen=100
 
 let g:fern#default_hidden = 1
 
 source ~/.config/nvim/plugconfig/airline.vim
-"let g:airline_powerline_fonts = 1
-"
-"let g:airline#extensions#tabline#enabled = 1
-"
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
 
 source ~/.config/nvim/lsp/lsp.vim
-"let g:compe = {}
-"let g:compe.enabled = v:true
-"let g:compe.autocomplete = v:true
-"let g:compe.debug = v:false
-"let g:compe.min_length = 1
-"let g:compe.preselect = 'enable'
-"let g:compe.throttle_time = 80
-"let g:compe.source_timeout = 200
-"let g:compe.incomplete_delay = 400
-"let g:compe.max_abbr_width = 100
-"let g:compe.max_kind_width = 100
-"let g:compe.max_menu_width = 100
-"let g:compe.documentation = v:true
-"
-"let g:compe.source = {}
-"let g:compe.source.path = v:true
-"let g:compe.source.buffer = v:true
-"let g:compe.source.calc = v:true
-"let g:compe.source.nvim_lsp = v:true
-"let g:compe.source.nvim_lua = v:true
-"let g:compe.source.vsnip = v:true
-"
-"inoremap <silent><expr> <C-Space> compe#complete()
-"inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-"inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-"inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-"inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
-noremap <leader>n :Fern . -drawer -toggle<CR>
+"noremap <leader>n :Fern . -drawer -toggle<CR>
 
 highlight link CompeDocumentation NormalFloat
+highlight Normal guibg=none
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_winsize = 30
+source ~/.config/nvim/plugconfig/which-key.vim
+source ~/.config/nvim/plugconfig/start-screen.vim
