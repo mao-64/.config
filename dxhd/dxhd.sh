@@ -13,7 +13,7 @@ sudo bl -d
 pactl set-source-mute 1 toggle
 
 #super + d
-dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#282a36" -sb "#44475a" -sf "#bd93f9" -nf "#6272a4" -fn Ubuntu
+dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#282828" -sb "#fabd2f" -sf "#282828" -nf "#ebdbb2" -fn Ubuntu
 
 #super + a
 ./Script/dmenu/test1.sh
