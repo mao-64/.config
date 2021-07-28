@@ -22,7 +22,13 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'mhinz/vim-startify'
 
 Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 call plug#end()

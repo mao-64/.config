@@ -14,6 +14,6 @@ let g:startify_lists = [
           \ ]
 
 let g:startify_bookmarks = [
-            \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 'i': '~/.config/nvim/init.lua' },
             \ { 'z': '~/.config/zsh/.zshrc' },
             \ ]
