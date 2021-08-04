@@ -13,4 +13,4 @@ xfce4-power-manager &
 #~/.screenlayout/test1.sh &
 /usr/bin/lxpolkit &
 
-exec dwm
+exec awesome

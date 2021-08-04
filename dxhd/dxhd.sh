@@ -21,6 +21,9 @@ dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#282828" -sb "#fabd2f" -sf "#282828" -
 #super + b
 librewolf
 
+#super + y
+tdrop -am -w 80% -y 10% -x 10% -h 80% st
+
 #super + alt + e
 nautilus
 
@@ -38,3 +41,6 @@ discord
 
 #super + shift + s
 ./Script/bookmarks.sh
+
+#super + s
+tabbed surf -e
