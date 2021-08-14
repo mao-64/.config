@@ -5,8 +5,9 @@ vim.wo.list = true
 vim.bo.tabstop = 3
 vim.wo.cursorline = true
 vim.wo.cursorcolumn = true
-vim.o.timeoutlen = 100
+vim.o.timeoutlen = 500
 vim.o.wrap = false
+vim.wo.colorcolumn = "80,100"
 
 vim.cmd [[
 let mapleader =" "
@@ -20,7 +21,8 @@ source ~/.config/nvim/lua/mao/lsp/lsp.vim
 set completeopt=menuone,noselect
 
 set shiftwidth=0 noexpandtab
-set colorcolumn=80,100
+
+set clipboard+=unnamedplus
 
 let g:solarized_termcolors=256
 colorscheme gruvbox
@@ -36,11 +38,15 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+map <Left> :vertical resize +5<CR>
+map <Right> :vertical resize -5<CR>
+
 nnoremap <A-k> :m .-2<CR>==
 nnoremap <A-j> :m .+1<CR>==
 vnoremap <A-k> :m '<-2<CR>gv=gv
 vnoremap <A-j> :m '>+1<CR>gv=gv
 ]]
+
 
 require "mao.telescope"
 
