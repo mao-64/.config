@@ -16,11 +16,11 @@ compinit
 _comp_options+=(globdots)               # Include hidden files.
 
 # Custom ZSH Binds
-bindkey '^ ' autosuggest-accept
+#bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
 #[ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
-source .config/zsh/aliasrc
+source ~/.config/zsh/aliasrc
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null

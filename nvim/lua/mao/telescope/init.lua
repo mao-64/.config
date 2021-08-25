@@ -2,9 +2,22 @@ require('telescope').setup {
 	defaults = {
 		sorting_strategy = "ascending",
 		layout_config = {
-			prompt_position = "top",
+--			prompt_position = "top",
+--			prompt_position = "bottom",
+--			themes.get_ivy,
 		}
 	},
+	pickers = {
+	    -- Your special builtin config goes in here
+	    buffers = {
+	      sort_lastused = true,
+	      theme = "ivy",
+	      previewer = false,
+	    },
+    find_files = {
+      theme = "ivy"
+    }
+  },
 	extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
@@ -17,6 +30,7 @@ require('telescope').setup {
   color_devicons = true,
 }
 require('telescope').load_extension('fzf')
+
 
 local M = {}
 M.nvim_files = function()

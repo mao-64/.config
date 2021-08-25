@@ -2,11 +2,8 @@ call plug#begin('~/.local/sharh/nvim/plugged')
 
 Plug 'neovim/nvim-lspconfig'
 
-Plug 'vim-airline/vim-airline'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'preservim/nerdtree'
 Plug 'joshdick/onedark.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'lambdalisue/fern.vim'
@@ -21,6 +18,7 @@ Plug 'liuchengxu/vim-which-key'
 
 Plug 'mhinz/vim-startify'
 
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 
@@ -30,5 +28,13 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+Plug 'tpope/vim-fugitive'
+"Plug 'airblade/vim-gitgutter'
+
+Plug 'hoob3rt/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
