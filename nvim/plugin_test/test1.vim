@@ -1,3 +1,0 @@
-function Maotestplugin()
-	vsplit
-endfunction

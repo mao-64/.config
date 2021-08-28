@@ -1,3 +1,5 @@
+let mapleader =" "
+
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -24,3 +26,5 @@ nnoremap <leader>fh :Telescope help_tags<CR>
 "nnoremap <leader>wt :vnew|:terminal
 nnoremap <leader>tt :terminal<CR>
 nnoremap <leader>tn :vsplit<CR>:terminal<CR>
+
+nnoremap <leader>n :NvimTreeToggle<CR>

@@ -34,7 +34,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 " Single mappings
 let g:which_key_map['s'] = [ ':Startify'                  , 'start screen' ]
-let g:which_key_map['n'] = [ ':Fern . -drawer -toggle'    , 'fern']
+let g:which_key_map['n'] = 'fern'
 
 let g:which_key_map['f'] = {
       \ 'name' : '+Telescope' ,
