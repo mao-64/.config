@@ -73,10 +73,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mao/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
-  ["fern.vim"] = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/fern.vim"
-  },
   gruvbox = {
     loaded = true,
     path = "/home/mao/.local/share/nvim/site/pack/packer/start/gruvbox"
@@ -85,9 +81,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mao/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
-  ["nord-vim"] = {
+  neogit = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nord-vim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/neogit"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -97,13 +93,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
-  ["onedark.vim"] = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/onedark.vim"
   },
   ["orgmode.nvim"] = {
     loaded = true,

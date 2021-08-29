@@ -18,6 +18,12 @@ pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%
 #XF86AudioRaiseVolume
 pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%
 
+#super + XF86AudioLowerVolume
+pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -1%
+
+#super + XF86AudioRaiseVolume
+pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +1%
+
 #XF86AudioMute
 pactl set-sink-mute 0 toggle
 

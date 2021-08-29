@@ -18,12 +18,12 @@ require "mao.luailne"
 
 require "mao.colors"
 
+require "mao.keybins"
+
 vim.cmd [[
-source ~/.config/nvim/lua/mao/lsp/lsp-config.vim
 source ~/.config/nvim/plugconfig/which-key.vim
 source ~/.config/nvim/plugconfig/start-screen.vim
 source ~/.config/nvim/lua/mao/lsp/lsp.vim
-source ~/.config/nvim/keybins.vim
 
 set completeopt=menuone,noselect
 
@@ -33,6 +33,5 @@ set clipboard+=unnamedplus
 
 set tabstop=3
 
-let g:fern#default_hidden = 1
 ]]
 

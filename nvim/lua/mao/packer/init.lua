@@ -36,6 +36,8 @@ return require('packer').startup({function()
 	    requires = 'kyazdani42/nvim-web-devicons'
 	}
 
+	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+
 end,
 config = {
   display = {
