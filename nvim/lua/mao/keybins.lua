@@ -8,8 +8,6 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
-nnoremap <leader>tt :terminal<CR>
-nnoremap <leader>tn :vsplit<CR>:terminal<CR>
 ]]
 
 vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = false })
@@ -29,3 +27,6 @@ vim.api.nvim_set_keymap("n", "<leader>fc", "<cmd>lua require'mao.telescope'.conf
 vim.api.nvim_set_keymap("n", "<leader>ff", ":Telescope find_files<CR>", { noremap = false })
 vim.api.nvim_set_keymap("n", "<leader>fg", ":Telescope git_files<CR>", { noremap = false })
 vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", { noremap = false })
+
+vim.api.nvim_set_keymap("n", "<leader>tt", ":terminal<CR>", { noremap = false })
+vim.api.nvim_set_keymap("n", "<leader>tn", ":vsplit<CR>:terminal<CR>", { noremap = false })
