@@ -6,7 +6,7 @@ xset r rate 200 20 &
 xrdb .config/.Xresources &
 nm-applet &
 #feh --bg-scale ~/Pictures/wallpaper/158544-download-free-ar-15-wallpaper-1920x1080-image.jpg
-feh --bg-scale ~/Pictures/wallpaper/cat-girl.png
+feh --bg-scale ~/Pictures/wallpaper/cat-girl.png &
 slstatus &
 picom &
 #xfce4-power-manager &
@@ -14,5 +14,6 @@ picom &
 #~/.screenlayout/test1.sh &
 /usr/bin/lxpolkit &
 #~/.config/polybar/launch.sh &
+mpd &
 
 exec awesome
