@@ -1,3 +1,4 @@
+require("os")
 require('telescope').setup {
 	defaults = {
 		sorting_strategy = "ascending",
@@ -47,6 +48,35 @@ M.conf_files = function()
 	require("telescope.builtin").find_files({
 		prompt_title = "< .config >",
 		cwd = "~/.config/",
+	})
+end
+
+M.anime_bg = function()
+	require("telescope.builtin").find_files({
+		prompt_title = "< BG >",
+		cwd = "~/Pictures/wallpaper",
+		attach_mappings = function(prompt_bufnr, map)
+			function set_the_background(close)
+				local content = require("telescope.actions.state").get_selected_entry(bufnr)
+			os.execute("feh --bg-scale ".. content.cwd .. "/" .. content.value)
+			if close then
+				require("telescope.actions").close(prompt_bufnr)
+			end
+		end
+
+		map("i", "<C-p>", function(bufnr)
+			set_the_background()
+		end)
+
+		map("i", "<CR>", function(bufnr)
+			set_the_background(true)
+		end)
+
+		map("n", "<CR>", function(bufnr)
+			set_the_background(true)
+		end)
+		return true
+	end	
 	})
 end
 

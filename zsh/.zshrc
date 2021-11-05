@@ -27,10 +27,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'n' vi-backward-char
+bindkey -M menuselect 'i' vi-up-line-or-history
+bindkey -M menuselect 'o' vi-forward-char
+bindkey -M menuselect 'e' vi-down-line-or-history
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select () {
@@ -52,6 +52,7 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
 export JAVA_HOME
 export PATH=$PATH:JAVA_HOME/bin
+export PATH=$PATH:~/apps/testing
 
 export EDITOR="nvim"
 
@@ -69,4 +70,5 @@ bindkey '^e' edit-command-line
 ## To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+#eval "$(starship init zsh)"
 eval "$(starship init zsh)"

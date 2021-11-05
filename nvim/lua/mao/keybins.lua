@@ -10,15 +10,15 @@ nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 ]]
 
-vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-e>", "<C-w>j", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-i>", "<C-w>k", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-o>", "<C-w>l", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-n>", "<C-w>h", { noremap = false })
 
-vim.api.nvim_set_keymap("n", "<Left>",	":vertical resize +5<CR>", { noremap = false })
-vim.api.nvim_set_keymap("n", "<Right>",	":vertical resize -5<CR>", { noremap = false })
-vim.api.nvim_set_keymap("n", "<UP>",		"resize +5", { noremap = false })
-vim.api.nvim_set_keymap("n", "<Down>",	"resize -5", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-Left>",	":vertical resize +5<CR>", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-Right>",	":vertical resize -5<CR>", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-UP>",		"resize +5<CR>", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-Down>",	"resize -5<CR>", { noremap = false })
 
 vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeToggle<CR>", { noremap = false })
 
@@ -30,3 +30,9 @@ vim.api.nvim_set_keymap("n", "<leader>fh", ":Telescope help_tags<CR>", { noremap
 
 vim.api.nvim_set_keymap("n", "<leader>tt", ":terminal<CR>", { noremap = false })
 vim.api.nvim_set_keymap("n", "<leader>tn", ":vsplit<CR>:terminal<CR>", { noremap = false })
+
+vim.api.nvim_set_keymap("n", "<leader>cw", "<cmd>lua require'mao.telescope'.anime_bg()<CR>", { noremap = false })
+
+vim.api.nvim_set_keymap("n", "<leader>ct", ":w<CR>:!tsc %<CR>", { noremap = false })
+
+vim.api.nvim_set_keymap("n", "<C-t>", ":tabNext<CR>", { noremap = false })

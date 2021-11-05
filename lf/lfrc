@@ -1,6 +1,17 @@
-set hidden true
+#ize -5et hidden true
 #set color256 true
 set drawbox true
+set previewer ~/.config/lf/previewer.sh
+set cleaner ~/.config/lf/clear_img.sh
+set hidden true
+
+# Custom Functions
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        *) xdg-open "$f" ;;
+    esac
+}}
 
 cmd mkdir %{{
 		  printf "Directory Name: "
@@ -13,3 +24,21 @@ cmd mkfile %{{
 		  read ans
 		  touch $ans
 }}
+
+cmd next ${{
+	cd "$f"
+}}
+
+cmd trash %trash-put $fx
+
+cmd wallpaper ${{
+	feh --bg-scale $f
+}}
+
+map <enter> open
+map e down
+map i up
+map n updir
+map o open
+
+map sw wallpaper

@@ -37,7 +37,7 @@ mpc next
 mpc prev
 
 #super + d
-dmenu_run -b -x 5 -y 15 -z 700 -l 10 -nb "#282828" -sb "#fabd2f" -sf "#282828" -nf "#ebdbb2" -fn Ubuntu
+dmenu_run -b -x 5 -y 15 -z 700 -l 10 -bw 5 -fn Ubuntu
 
 #super + v
 st -e ranger ~/Vault
@@ -52,7 +52,7 @@ tdrop -am -w 80% -y 10% -x 10% -h 80% st
 st -e ncmpcpp
 
 #super + alt + e
-nautilus
+~/Scripts/dmenu_emoji/emenu.sh
 
 #super + alt + r
 st -e ranger
@@ -69,5 +69,3 @@ discord
 #super + shift + s
 ./Script/bookmarks.sh
 
-#super + s
-tabbed surf -e

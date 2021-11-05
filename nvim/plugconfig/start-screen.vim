@@ -9,10 +9,10 @@ let g:startify_custom_header = [
 
 let g:startify_lists = [
 	\ { 'type': 'files',     'header': ['   Files']            },
-	\ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
 	\ { 'type': 'sessions',  'header': ['   Sessions']       },
 	\ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
 	\ ]
+"	\ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
 
 let g:startify_bookmarks = [
 	\ { 'i': '~/.config/nvim/init.lua' },

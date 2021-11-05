@@ -27,3 +27,8 @@ dwm.normfgcolor: #ebdbb2
 dwm.selfgcolor: #ebdbb2
 dwm.selbordercolor: #cc241d
 dwm.normbordercolor: #282828
+
+dmenu.background: #1a1b26
+dmenu.foreground: #c0caf5
+dmenu.selbackground: #a9b1d6
+dmenu.selforeground: #1a1b26
