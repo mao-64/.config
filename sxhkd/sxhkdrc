@@ -36,6 +36,12 @@ XF86AudioPrev
 
 super + d
 	dmenu_run -b -x 5 -y 15 -z 700 -l 10 -bw 5 -fn Ubuntu
+	
+super + shift + d
+	dmenu_run -b -x 5 -y 15 -z 700 -l 10 -bw 5 -fn "Standard Galactic Alphabet"
+
+super + space
+	dmenu_run -b -x 5 -y 15 -z 700 -l 10 -bw 5 -fn Ubuntu
 
 super + v
 	st -e ranger ~/Vault
@@ -58,9 +64,8 @@ super + a
 super + alt + s
 	st -e pulsemixer
 
-super + shift + d
-	discord
-
 super + shift + s
 	./Script/bookmarks.sh
 
+Print
+	flameshot full -p ~/Pictures/

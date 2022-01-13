@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -71,97 +71,94 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["completion-nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/completion-nvim"
-  },
-  gruvbox = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/gruvbox"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/completion-nvim",
+    url = "https://github.com/nvim-lua/completion-nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  neogit = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/neogit"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["nvim-compe"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-compe",
+    url = "https://github.com/hrsh7th/nvim-compe"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
-  },
-  ["orgmode.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0" },
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   playground = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/playground"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/tokyonight.nvim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["traces.vim"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/traces.vim"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/traces.vim",
+    url = "https://github.com/markonm/traces.vim"
   },
   ["vim-devicons"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-devicons"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-startify"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-startify"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-surround"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-which-key"] = {
     loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-which-key"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vimwiki"
+    path = "/home/mao/.local/share/nvim/site/pack/packer/start/vim-which-key",
+    url = "https://github.com/liuchengxu/vim-which-key"
   }
 }
 
@@ -170,10 +167,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: orgmode.nvim
-time([[Config for orgmode.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0", "config", "orgmode.nvim")
-time([[Config for orgmode.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

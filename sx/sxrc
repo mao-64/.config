@@ -17,6 +17,7 @@ picom &
 #~/.config/polybar/launch.sh &
 mpd &
 sxhkd &
+dunst &
 
 exec dwm
 

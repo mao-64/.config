@@ -20,4 +20,5 @@ let g:startify_bookmarks = [
 	\ { 'a': '~/.config/awesome/rc.lua' },
 	\ { 's': '~/.config/sx/sxrc' },
 	\ { 'p': '~/.config/polybar/config' },
+	\ { 'n': '~/Documents/md/index.md' },
 	\ ]

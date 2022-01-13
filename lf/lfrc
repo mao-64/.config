@@ -35,6 +35,14 @@ cmd wallpaper ${{
 	feh --bg-scale $f
 }}
 
+cmd feh ${{
+	feh $f & disown
+}}
+
+cmd mpv ${{
+	mpv $f --loop-file=yes & disown
+}}
+
 map <enter> open
 map e down
 map i up
@@ -42,3 +50,7 @@ map n updir
 map o open
 
 map sw wallpaper
+unmap f
+map f feh
+unmap a
+map a mpv

@@ -14,7 +14,7 @@ return require('packer').startup({function()
 	use 'mhinz/vim-startify'
 
 	use 'folke/tokyonight.nvim'
-	use 'morhetz/gruvbox'
+--	use 'morhetz/gruvbox'
 	use 'ryanoasis/vim-devicons'
 
 	use 'nvim-lua/popup.nvim'
@@ -22,16 +22,16 @@ return require('packer').startup({function()
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 	use 'nvim-telescope/telescope.nvim'
 
-	use 'tpope/vim-fugitive'
+--	use 'tpope/vim-fugitive'
 
 	use 'hoob3rt/lualine.nvim'
 	use 'kyazdani42/nvim-web-devicons'
 
 --	use 'kristijanhusak/orgmode.nvim'
-	use {'kristijanhusak/orgmode.nvim', branch = 'tree-sitter', config = function()
-        require('orgmode').setup{}
-	end
-	}
+--	use {'kristijanhusak/orgmode.nvim', branch = 'tree-sitter', config = function()
+--        require('orgmode').setup{}
+--	end
+--	}
 	
 	use 'markonm/traces.vim'
 
@@ -41,7 +41,7 @@ use {
     config = function() require'nvim-tree'.setup {} end
 }
 
-	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+--	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
 	use {
 	    'nvim-treesitter/nvim-treesitter',
