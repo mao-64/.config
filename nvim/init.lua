@@ -25,8 +25,6 @@ require "mao.keybins"
 
 require "mao.treesitter"
 
-require "mao.org"
-
 require "mao.testing"
 
 require'lspconfig'.tsserver.setup{}
