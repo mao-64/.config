@@ -1,5 +1,6 @@
 vim.wo.colorcolumn = "80,100"
-vim.g.tokyonight_style = "night"
+--vim.g.tokyonight_style = "night"
+vim.g.tokyonight_style = "storm"
 
 vim.cmd [[
 let g:solarized_termcolors=256

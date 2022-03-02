@@ -50,7 +50,11 @@ map n updir
 map o open
 
 map sw wallpaper
-unmap f
+map f
 map f feh
-unmap a
+map a
 map a mpv
+
+map tp trash
+
+map gc cd ~/.config

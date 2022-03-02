@@ -71,4 +71,4 @@ bindkey '^e' edit-command-line
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #eval "$(starship init zsh)"
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
