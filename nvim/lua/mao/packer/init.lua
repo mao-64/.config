@@ -2,6 +2,8 @@ return require('packer').startup({function()
 	use "wbthomason/packer.nvim"
 	use 'neovim/nvim-lspconfig'
 
+	use 'norcalli/nvim-colorizer.lua'
+
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'

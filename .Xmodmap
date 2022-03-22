@@ -1,6 +1,5 @@
+keycode 66 = Escape
 clear Lock
 
-keycode 66 = Escape
-
-keycode 107 = Super_R
+!keycode 107 = Super_R
 

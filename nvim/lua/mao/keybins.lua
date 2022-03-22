@@ -10,10 +10,10 @@ nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 ]]
 
-vim.api.nvim_set_keymap("n", "<C-e>", "<C-w>j", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-i>", "<C-w>k", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-o>", "<C-w>l", { noremap = false })
-vim.api.nvim_set_keymap("n", "<C-n>", "<C-w>h", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-j>", "<C-w>j", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = false })
+vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = false })
 
 vim.api.nvim_set_keymap("n", "<C-Left>",	":vertical resize +5<CR>", { noremap = false })
 vim.api.nvim_set_keymap("n", "<C-Right>",	":vertical resize -5<CR>", { noremap = false })

@@ -8,7 +8,7 @@ vim.o.timeoutlen = 500
 vim.o.wrap = false
 vim.g.smarttab = true
 
-require "mao.colemak"
+--require "mao.colemak"
 
 require "mao.packer"
 
@@ -27,8 +27,14 @@ require "mao.treesitter"
 require "mao.testing"
 
 require'lspconfig'.tsserver.setup{}
+--require'lspconfig'.pyright.setup{}
 
 require'nvim-tree'.setup {}
+
+require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.jedi_language_server.setup{}
+
+require'colorizer'.setup()
 
 vim.cmd [[
 source ~/.config/nvim/plugconfig/which-key.vim

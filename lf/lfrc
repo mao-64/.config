@@ -1,5 +1,5 @@
 #ize -5et hidden true
-#set color256 true
+set color256 true
 set drawbox true
 set previewer ~/.config/lf/previewer.sh
 set cleaner ~/.config/lf/clear_img.sh
@@ -35,25 +35,18 @@ cmd wallpaper ${{
 	feh --bg-scale $f
 }}
 
-cmd feh ${{
-	feh $f & disown
-}}
 
 cmd mpv ${{
 	mpv $f --loop-file=yes & disown
 }}
 
 map <enter> open
-map e down
-map i up
-map n updir
-map o open
+#map e down
+#map i up
+#map n updir
+#map o open
 
 map sw wallpaper
-map f
-map f feh
-map a
-map a mpv
 
 map tp trash
 

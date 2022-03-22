@@ -7,8 +7,8 @@ let g:solarized_termcolors=256
 colorscheme tokyonight
 set termguicolors
 
-highlight link CompeDocumentation NormalFloat
-au ColorScheme * hi Normal ctermbg=none guibg=none
-au ColorScheme * hi NormalNC ctermbg=none guibg=none
-au ColorScheme * hi NvimTreeNormal ctermbg=none guibg=none
+"highlight link CompeDocumentation NormalFloat
+"au ColorScheme * hi Normal ctermbg=none guibg=none
+"au ColorScheme * hi NormalNC ctermbg=none guibg=none
+"au ColorScheme * hi NvimTreeNormal ctermbg=none guibg=none
 ]]

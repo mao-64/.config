@@ -27,10 +27,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # Use vim keys in tab complete menu:
-bindkey -M menuselect 'n' vi-backward-char
-bindkey -M menuselect 'i' vi-up-line-or-history
-bindkey -M menuselect 'o' vi-forward-char
-bindkey -M menuselect 'e' vi-down-line-or-history
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-up-line-or-history
+bindkey -M menuselect 'k' vi-forward-char
+bindkey -M menuselect 'l' vi-down-line-or-history
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select () {
@@ -72,3 +72,10 @@ bindkey '^e' edit-command-line
 
 #eval "$(starship init zsh)"
 #eval "$(starship init zsh)"
+
+#export MANPAGER="nvim -c 'set ft=man' -"
+export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+
+export LF_ICONS="\
+*.md=:\
+"

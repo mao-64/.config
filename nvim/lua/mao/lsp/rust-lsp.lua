@@ -1,1 +1,1 @@
-require'lspconfig'.rls.setup{}
+require'lspconfig'.rust-analyzer.setup{}
